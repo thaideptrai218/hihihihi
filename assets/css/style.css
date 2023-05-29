@@ -1,0 +1,359 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #0f1b4c;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Common */
+a {
+    text-decoration: none;
+}
+
+.content {
+    width: 1110px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 98px;
+    padding: 18px 16px;
+    background: var(--primary-color);
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* ======== Header ======== */
+.header {
+    position: relative;
+    background: #e6f0ff;
+    height: 70vh;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding-top: 38px;
+}
+
+.navbar ul {
+    display: flex;
+    margin-left: 50px;
+}
+
+.navbar .actions {
+    margin-left: auto;
+}
+
+.navbar ul a {
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: #4f5361;
+    padding: 8px 14px;
+}
+
+.navbar ul a:hover {
+    text-decoration: underline;
+}
+
+.navbar .action-link {
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
+
+.navbar .action-btn {
+    padding: 13px 16px;
+    margin-left: 18px;
+}
+
+.hero {
+    margin-top: 130px;
+}
+
+.hero .info {
+    width: 51%;
+}
+
+.hero .sub-title {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+    color: #687691;
+}
+
+.hero .title {
+    margin-top: 8px;
+    font-weight: 700;
+    font-size: 6.2rem;
+    line-height: 1.19;
+    color: #000336;
+}
+
+.hero .desc {
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.78;
+    color: #5a6473;
+}
+
+.hero-cta {
+    min-width: 170px;
+    margin-top: 40px;
+}
+
+.hero-img {
+    position: absolute;
+    right: calc((100vw - 1110px) / 2 - 100px);
+    bottom: 0;
+}
+
+/* ======== Clients ======== */
+.clients {
+    margin-top: 122px;
+}
+
+.clients .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clients .desc {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.25;
+    color: #7d8589;
+}
+
+.clients .row-desc {
+    margin-top: 23px;
+}
+
+.clients .images {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 96px;
+}
+
+/* ====================HIW================= */
+/* TEXT */
+.hiw {
+    margin-top: 174px;
+}
+
+.hiw .hiw-desc {
+    width: 41%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.hiw-desc .title::before {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    display: inline-block;
+    width: 41px;
+    height: 4px;
+    background: #000339;
+    border-radius: 12px;
+}
+
+.hiw-desc .title {
+    position: relative;
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 1;
+    text-align: center;
+    color: #000339;
+}
+
+.hiw-desc .desc-hiw {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.88;
+    text-align: center;
+    color: #5a6473;
+}
+
+/* LIST guides */
+
+.seller-type {
+    display: flex;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 61%;
+    justify-content: space-between;
+}
+
+.seller-type .guides {
+    text-align: center;
+}
+
+.seller-type .guides .title {
+    margin-bottom: 10px;
+    margin-top: 26px;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 1.1;
+    text-align: center;
+    color: #3b3c45;
+}
+
+.seller-type .guides a {
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 21px;
+    text-align: center;
+    color: #0689ff;
+}
+
+.seller-type .arrow {
+    margin-left: 8px;
+}
+
+.hiw-cta {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-hiw {
+    margin-top: 50px;
+    min-width: 170px;
+    font-weight: 500;
+    font-size: 1.3rem;
+    text-align: center;
+
+    color: #ffffff;
+}
+
+/* Featured Properties */
+
+.featured {
+    height: 70vh;
+    margin-top: 120px;
+    background-color: #f5fafe;
+}
+
+.featured-box .info-box {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.featured .featured-box {
+    padding-top: 110px;
+}
+
+.featured-box h2.title {
+    font-weight: 600;
+    font-size: 3.5rem;
+    color: #000339;
+}
+
+.featured-box p.desc {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.88;
+    color: #5a6473;
+}
+
+.featured-box .cta {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 30px;
+    text-align: right;
+    color: #0689ff;
+}
+
+/* CARD */
+
+.featured .cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 68px;
+    height: 357px;
+}
+
+.cards .picture {
+}
+
+.cards .item {
+    background: #ffffff;
+    box-shadow: 0px 65px 80px -46px rgba(226, 238, 249, 0.6);
+    border-radius: 12px;
+}
+
+.cards h3.title {
+    margin-top: 17px;
+    margin-left: 27px;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #000339;
+}
+
+.cards p.desc {
+    display: inline-block;
+    /* margin-right: 38px; */
+    margin-left: 27px;
+    margin-top: 11px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 21px;
+    color: #a3a6ab;
+}
+
+.cards div.item-info {
+    /* margin-right: 38px; */
+    width: 291px;
+    margin-left: 27px;
+    margin-top: 21px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cards .item-list {
+    display: flex;
+    align-items: center;
+}
+
+.cards img.info {
+    /* height: 22px; */
+}
+
+.cards span.info {
+    margin-left: 9px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 18px;
+    text-align: center;
+    color: #444444;
+}
